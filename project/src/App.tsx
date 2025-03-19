@@ -19,7 +19,7 @@ function App() {
       {/* Navigation */}
       <nav className="container mx-auto px-6 py-6">
         <div className="flex justify-between items-center">
-          <div className="text-2xl font-bold text-emerald-500"><img src="./logo.svg"alt="Logos" /><span className="text-white">.io</span></div>
+          <div className="text-2xl font-bold text-emerald-500"><img src="../logo.svg"alt="Logos" /><span className="text-white">.io</span></div>
           <div className="hidden md:flex space-x-10 text-sm">
             <a href="#home" className="hover:text-emerald-400 transition-colors">Accueil</a>
             <a href="#about" className="hover:text-emerald-400 transition-colors">À propos</a>

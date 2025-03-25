@@ -135,7 +135,7 @@ const SkillsSection: React.FC = () => {
               </li>
               <li className="flex items-center">
                 <span className="w-1 h-1 bg-emerald-500 rounded-full mr-2"></span>
-                Figma / Canva
+                Figma / Canvaa
               </li>
             </ul>
           </div>

@@ -32,15 +32,18 @@ const Navbar: React.FC = () => {
         </div>
         {/* Icônes sociales et bouton CV (visible sur desktop) */}
         <div className="hidden md:flex space-x-4 items-center">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition-colors">
+          <a href="https://github.com/eosfel97" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition-colors">
             <Github size={20} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition-colors">
+          <a href="https://www.linkedin.com/in/any-gnahiet-075339234/" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition-colors">
             <Linkedin size={20} />
           </a>
-          <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-md text-sm transition-colors">
-            CV
-          </button>
+          <a href="/cvFinal.pdf" download="cvFinal.pdf" className="inline-block">
+            <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-md text-sm transition-colors">
+                    CV
+            </button>
+          </a>
+
         </div>
       </div>
       {/* Menu mobile */}

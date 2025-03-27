@@ -33,7 +33,7 @@ const SkillsSection: React.FC = () => {
               </li>
               <li className="flex items-center">
                 <span className="w-1 h-1 bg-emerald-500 rounded-full mr-2"></span>
-                Java (Spring)
+                Java (SpringBoot)
               </li>
               <li className="flex items-center">
                 <span className="w-1 h-1 bg-emerald-500 rounded-full mr-2"></span>

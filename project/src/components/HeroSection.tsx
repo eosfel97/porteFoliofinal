@@ -42,7 +42,7 @@ const HeroSection: React.FC = () => {
             <div className="p-4 bg-slate-800 rounded-lg">
               <Layers className="text-emerald-500 mb-2" size={24} />
               <h3 className="font-medium mb-1">DevOps</h3>
-              <p className="text-gray-400 text-sm">CI/CD & Cloud</p>
+              <p className="text-gray-400 text-sm">CI/CD</p>
             </div>
           </div>
         </div>

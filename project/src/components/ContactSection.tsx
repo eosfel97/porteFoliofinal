@@ -76,7 +76,7 @@ const ContactSection: React.FC = () => {
                 <div>
                   <h4 className="font-medium">Email</h4>
                   <a href="mailto:contact@devback.io" className="text-gray-400 hover:text-emerald-400 transition-colors">
-                    contact@devback.io
+                    pro.gnahiet@gmail.com
                   </a>
                 </div>
               </div>
@@ -85,7 +85,7 @@ const ContactSection: React.FC = () => {
                 <div>
                   <h4 className="font-medium">LinkedIn</h4>
                   <a href="https://linkedin.com/in/backenddev" className="text-gray-400 hover:text-emerald-400 transition-colors">
-                    linkedin.com/in/backenddev
+                  https://www.linkedin.com/in/any-gnahiet-075339234/
                   </a>
                 </div>
               </div>
@@ -94,7 +94,7 @@ const ContactSection: React.FC = () => {
                 <div>
                   <h4 className="font-medium">GitHub</h4>
                   <a href="https://github.com/devback" className="text-gray-400 hover:text-emerald-400 transition-colors">
-                    github.com/devback
+                  https://github.com/eosfel97
                   </a>
                 </div>
               </div>

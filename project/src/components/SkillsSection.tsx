@@ -20,7 +20,7 @@ const SkillsSection: React.FC = () => {
             <Code className="text-emerald-500 mb-4" size={32} />
             <h3 className="text-xl font-bold mb-3">Langages & Frameworks</h3>
             <p className="text-gray-400 mb-4">
-              Maîtrise des langages, frameworks et bibliothèques front-end / back-end.
+             <br/>
             </p>
             <ul className="space-y-2 text-gray-300">
               <li className="flex items-center">
@@ -45,15 +45,11 @@ const SkillsSection: React.FC = () => {
               </li>
               <li className="flex items-center">
                 <span className="w-1 h-1 bg-emerald-500 rounded-full mr-2"></span>
-                Powershell
-              </li>
-              <li className="flex items-center">
-                <span className="w-1 h-1 bg-emerald-500 rounded-full mr-2"></span>
                 Node.js
               </li>
               <li className="flex items-center">
                 <span className="w-1 h-1 bg-emerald-500 rounded-full mr-2"></span>
-                React / React Native / React Router
+                React / React Native 
               </li>
               <li className="flex items-center">
                 <span className="w-1 h-1 bg-emerald-500 rounded-full mr-2"></span>
@@ -71,10 +67,6 @@ const SkillsSection: React.FC = () => {
                 <span className="w-1 h-1 bg-emerald-500 rounded-full mr-2"></span>
                 Vite
               </li>
-              <li className="flex items-center">
-                <span className="w-1 h-1 bg-emerald-500 rounded-full mr-2"></span>
-                JWT
-              </li>
             </ul>
           </div>
 
@@ -83,7 +75,7 @@ const SkillsSection: React.FC = () => {
             <Database className="text-emerald-500 mb-4" size={32} />
             <h3 className="text-xl font-bold mb-3">Bases de données</h3>
             <p className="text-gray-400 mb-4">
-              Conception et optimisation de solutions de stockage.
+              <br/>
             </p>
             <ul className="space-y-2 text-gray-300">
               <li className="flex items-center">
@@ -94,6 +86,10 @@ const SkillsSection: React.FC = () => {
                 <span className="w-1 h-1 bg-emerald-500 rounded-full mr-2"></span>
                 Firebase
               </li>
+              <li className="flex items-center">
+                <span className="w-1 h-1 bg-emerald-500 rounded-full mr-2"></span>
+                Postgresql
+              </li>
             </ul>
           </div>
 
@@ -102,7 +98,7 @@ const SkillsSection: React.FC = () => {
             <Globe className="text-emerald-500 mb-4" size={32} />
             <h3 className="text-xl font-bold mb-3">Infrastructure & DevOps</h3>
             <p className="text-gray-400 mb-4">
-              Déploiement et gestion d'infrastructures cloud robustes.
+              <br/>
             </p>
             <ul className="space-y-2 text-gray-300">
               <li className="flex items-center">
@@ -131,11 +127,7 @@ const SkillsSection: React.FC = () => {
               </li>
               <li className="flex items-center">
                 <span className="w-1 h-1 bg-emerald-500 rounded-full mr-2"></span>
-                NPM
-              </li>
-              <li className="flex items-center">
-                <span className="w-1 h-1 bg-emerald-500 rounded-full mr-2"></span>
-                Figma / Canvaa
+                Figma / Canva
               </li>
             </ul>
           </div>

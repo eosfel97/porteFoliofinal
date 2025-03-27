@@ -21,7 +21,7 @@ const AboutSection: React.FC = () => {
           <div className="md:w-2/3 md:pl-16">
             <h2 className="text-3xl font-bold mb-6">À propos de moi</h2>
             <p className="text-gray-400 leading-relaxed mb-6">
-              Je m'appelle GNAHIET et je suis un étudiant en licence informatique passionné par le développement web et mobile. Fort de mes expériences en stage – notamment en tant que développeur web chez Philiance formation et concepteur développeur d’applications au Greta l’Essonne – je recherche actuellement un stage de 6 mois à partir d'avril pour valider mon cursus et acquérir une expérience professionnelle enrichissante.
+              Je m'appelle GNAHIET et je suis un étudiant en licence informatique passionné par le développement et la conception d'applications web et mobiles. Fort de mes expériences en stage – notamment en tant que développeur web chez Philiance formation et concepteur développeur d’applications au Greta l’Essonne – je recherche actuellement un stage de 6 mois à partir d'avril pour valider mon cursus et acquérir une expérience professionnelle enrichissante.
             </p>
             <p className="text-gray-400 leading-relaxed mb-6">
               Doté d'un esprit d'équipe, d'une grande adaptabilité, d'un goût prononcé pour le challenge et d'une forte autonomie, je m'efforce de toujours fournir des solutions innovantes et performantes répondant aux besoins du métier.

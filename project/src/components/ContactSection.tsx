@@ -1,19 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import { Mail, Linkedin, Github } from 'lucide-react';
 
 const ContactSection: React.FC = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.id]: e.target.value });
-  };
+  const [state, handleSubmit] = useForm("xovelrrj");
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Ici, vous pouvez ajouter l'appel à votre API de traitement du formulaire
-    console.log(formData);
-    setFormData({ name: '', email: '', message: '' });
-  };
+  if (state.succeeded) {
+    return (
+      <section id="contact" className="bg-slate-900 py-20">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold">Me contacter</h2>
+            <p className="text-green-400 mt-4 max-w-2xl mx-auto text-xl font-medium">
+              Merci pour votre message !
+            </p>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="contact" className="bg-slate-900 py-20">
@@ -29,40 +34,34 @@ const ContactSection: React.FC = () => {
             <h3 className="text-xl font-bold mb-6">Envoyez-moi un message</h3>
             <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-400 mb-1">Nom</label>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-400 mb-1">
+                  Email
+                </label>
                 <input
-                  type="text"
-                  id="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full bg-slate-700 border border-slate-600 rounded-md py-2 px-4 text-white focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
-                  required
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-400 mb-1">Email</label>
-                <input
-                  type="email"
                   id="email"
-                  value={formData.email}
-                  onChange={handleChange}
+                  type="email"
+                  name="email"
                   className="w-full bg-slate-700 border border-slate-600 rounded-md py-2 px-4 text-white focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                   required
                 />
+                <ValidationError prefix="Email" field="email" errors={state.errors} />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-400 mb-1">Message</label>
+                <label htmlFor="message" className="block text-sm font-medium text-gray-400 mb-1">
+                  Message
+                </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows={4}
-                  value={formData.message}
-                  onChange={handleChange}
                   className="w-full bg-slate-700 border border-slate-600 rounded-md py-2 px-4 text-white focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                   required
                 ></textarea>
+                <ValidationError prefix="Message" field="message" errors={state.errors} />
               </div>
               <button
                 type="submit"
+                disabled={state.submitting}
                 className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-4 rounded-md transition-colors"
               >
                 Envoyer
@@ -76,21 +75,27 @@ const ContactSection: React.FC = () => {
                 <Mail className="text-emerald-500 mr-4 mt-1" size={20} />
                 <div>
                   <h4 className="font-medium">Email</h4>
-                  <a href="mailto:contact@devback.io" className="text-gray-400 hover:text-emerald-400 transition-colors">contact@devback.io</a>
+                  <a href="mailto:contact@devback.io" className="text-gray-400 hover:text-emerald-400 transition-colors">
+                    contact@devback.io
+                  </a>
                 </div>
               </div>
               <div className="flex items-start">
                 <Linkedin className="text-emerald-500 mr-4 mt-1" size={20} />
                 <div>
                   <h4 className="font-medium">LinkedIn</h4>
-                  <a href="https://linkedin.com/in/backenddev" className="text-gray-400 hover:text-emerald-400 transition-colors">linkedin.com/in/backenddev</a>
+                  <a href="https://linkedin.com/in/backenddev" className="text-gray-400 hover:text-emerald-400 transition-colors">
+                    linkedin.com/in/backenddev
+                  </a>
                 </div>
               </div>
               <div className="flex items-start">
                 <Github className="text-emerald-500 mr-4 mt-1" size={20} />
                 <div>
                   <h4 className="font-medium">GitHub</h4>
-                  <a href="https://github.com/devback" className="text-gray-400 hover:text-emerald-400 transition-colors">github.com/devback</a>
+                  <a href="https://github.com/devback" className="text-gray-400 hover:text-emerald-400 transition-colors">
+                    github.com/devback
+                  </a>
                 </div>
               </div>
             </div>
